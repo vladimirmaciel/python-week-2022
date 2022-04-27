@@ -22,3 +22,7 @@ with Session(engine)as session:
     results = session.exec(sql)
     for beer in results:
         print(beer.name)
+
+
+para rodar a API
+uvicorn beerlog.api:api --reload
